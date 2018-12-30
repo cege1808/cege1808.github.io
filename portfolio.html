@@ -3,48 +3,57 @@ layout: default
 title: Clarissa Gunawan | Portfolio
 inprogress_projects:
   emberNet:
+    title: emberNet
     subtitle: forest fire detection
     link: /portfolio/emberNet
     image: /assets/emberNet.jpeg
 previous_projects:
   medispenser:
+    title: medispenser
     subtitle: medication adherence
     link: /portfolio/medispenser
     image: /assets/medispenser.jpg
-  Lighting Automation:
+  Savvy Bulb:
+    title: Savvy Bulb
     subtitle: control light from app
-    link: /portfolio/lighting_automation
-    image: /assets/lighting_automation.jpg
+    link: /portfolio/savvy-bulb
+    image: /assets/savvy-bulb/hardware.jpg
   3D Import Export:
+    title: 3D Import Export
     subtitle: trade visualization
     link: /portfolio/3d_import_export
     image: /assets/3d_import_export.jpg
 ---
 
-<div id="portfolio">
-  <h5 class="title">IN PROGRESS</h5>
-  <div class="row in-progress mb-5">
+<div id="portfolio" class="pl-5">
+  <div class="row">
+    <h5 class="title">IN PROGRESS</h5>
+  </div>
+  <div class="row in-progress mb-3">
     {% for project in page.inprogress_projects %}
-      <div class="col-3 p-3 m-3 card text-center">
+      <div class="col-lg-3 col-md-4 col-sm-6 p-3 my-3 mr-4 card text-center">
         <a href="{{ project[1].link }}">
-          <img src="{{ site.baseurl }}{{ project[1].image }}" class="img-fluid" alt="..." />
+          <img src="{{ site.baseurl }}{{ project[1].image }}" class="card-img-top img-fluid" alt="..." />
           <div class="card-img-overlay">
-            <h5 class="card-title">{{ project[0] | upcase }}</h5>
-            <p class="card-text">{{ project[1].subtitle | downcase }}</p>
+            <h5 class="card-title">{{ project[1].title }}</h5>
+            <p class="card-text title">{{ project[1].subtitle | upcase }}</p>
           </div>
         </a>
       </div>
     {% endfor %}
   </div>
-  <h5 class="title">PREVIOUS</h5>
+  <hr>
+  <div class="row mt-5">
+    <h5 class="title">PREVIOUS</h5>
+  </div>
   <div class="row previous">
     {% for project in page.previous_projects %}
-      <div class="col-5 p-3 m-3 card text-center">
+      <div class="col-md-5 col-sm-6 p-3 my-3 mr-4 card text-center">
         <a href="{{ project[1].link }}">
-          <img src="{{ site.baseurl }}{{ project[1].image }}" class="img-fluid" alt="..." />
+          <img src="{{ site.baseurl }}{{ project[1].image }}" class="card-img-top img-fluid" alt="..." />
           <div class="card-img-overlay">
-            <h5 class="card-title">{{ project[0] | upcase }}</h5>
-            <p class="card-text">{{ project[1].subtitle | downcase }}</p>
+            <h5 class="card-title">{{ project[1].title }}</h5>
+            <p class="card-text title">{{ project[1].subtitle | upcase }}</p>
           </div>
         </a>
       </div>
