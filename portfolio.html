@@ -1,0 +1,53 @@
+---
+layout: default
+title: Clarissa Gunawan | Portfolio
+inprogress_projects:
+  emberNet:
+    subtitle: forest fire detection
+    link: /portfolio/emberNet
+    image: /assets/emberNet.jpeg
+previous_projects:
+  medispenser:
+    subtitle: medication adherence
+    link: /portfolio/medispenser
+    image: /assets/medispenser.jpg
+  Lighting Automation:
+    subtitle: control light from app
+    link: /portfolio/lighting_automation
+    image: /assets/lighting_automation.jpg
+  3D Import Export:
+    subtitle: trade visualization
+    link: /portfolio/3d_import_export
+    image: /assets/3d_import_export.jpg
+---
+
+<div id="portfolio">
+  <h5 class="title">IN PROGRESS</h5>
+  <div class="row in-progress mb-5">
+    {% for project in page.inprogress_projects %}
+      <div class="col-3 p-3 m-3 card text-center">
+        <a href="{{ project[1].link }}">
+          <img src="{{ site.baseurl }}{{ project[1].image }}" class="img-fluid" alt="..." />
+          <div class="card-img-overlay">
+            <h5 class="card-title">{{ project[0] | upcase }}</h5>
+            <p class="card-text">{{ project[1].subtitle | downcase }}</p>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+  <h5 class="title">PREVIOUS</h5>
+  <div class="row previous">
+    {% for project in page.previous_projects %}
+      <div class="col-5 p-3 m-3 card text-center">
+        <a href="{{ project[1].link }}">
+          <img src="{{ site.baseurl }}{{ project[1].image }}" class="img-fluid" alt="..." />
+          <div class="card-img-overlay">
+            <h5 class="card-title">{{ project[0] | upcase }}</h5>
+            <p class="card-text">{{ project[1].subtitle | downcase }}</p>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
