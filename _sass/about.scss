@@ -1,0 +1,23 @@
+#about-info {
+  padding-top: 30%;
+  .intro {
+    font-family: 'Josefin Sans', 'sans-serif';
+    font-size: 15px;
+  }
+  .contact-email a{
+    font-family: 'Josefin Sans', 'sans-serif';
+    font-size: 15px;
+    color: darkgray;
+  }
+  .contact-email a:hover {
+    color: black;
+    text-decoration: none;
+  }
+  .contact-icons i{
+    color: black;
+    font-size: 20px;
+  }
+  .contact-icons i:hover {
+    color: gray;
+  }
+}

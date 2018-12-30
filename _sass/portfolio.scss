@@ -1,0 +1,39 @@
+#portfolio {
+  .card {
+    border-radius: none;
+    border-style: none;
+    padding: 0 !important;
+    h5 {
+      font-family: 'Josefin Sans', 'sans-serif';
+      font-size: 30px;
+      color: white;
+      margin-bottom: 0;
+    }
+    p {
+      color: lightgray;
+      font-size: 15px;
+    }
+    img {
+      filter: brightness(50%);
+    }
+    a:hover{
+      h5 {
+        color: lightgray;
+      }
+      p {
+        color: darkgray;
+      }
+      img {
+        filter: brightness(40%);
+      }
+    }
+    .card-img-top {
+      width: 100%;
+      object-fit: cover;
+    }
+    .card-img-overlay {
+      height: 100%;
+      padding-top: 30%;
+    }
+  }
+}
