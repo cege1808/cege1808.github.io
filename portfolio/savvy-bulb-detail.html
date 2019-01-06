@@ -1,0 +1,63 @@
+---
+layout: default
+title: Clarissa Gunawan | Savvy Bulb Features
+---
+
+<div id="savvy-bulb" class="portfolio">
+  <div class="row">
+    <div class="col-12 mb-3">
+      <h5 class="title text-center">Savvy Bulb&nbsp;<i class="fa fa-lightbulb"></i></h5>
+      <p class="description text-center">Components | <a href="/portfolio/savvy-bulb">Back to Overview</a></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="offset-lg-3 col-lg-6 offset-md-2 col-md-8 my-4">
+      <h5>Log In Menu</h5>
+      <p>A login pop- up menu is opened if the user has not previously signed into the system. The data will then be verified by Particle’s cloud server and existing data about the user’s registered light bulbs will be immediately displayed. The design of the login menu is pre-designed by Particle </p>
+      <div class="text-center">
+        <img src="{{site.baseurl}}/assets/savvy-bulb/login.png" alt="Savvy Bulb Particle Login" width="50%"/>
+      </div>
+      <br/><br/>
+
+      <h5>On/Off Switch</h5>
+      <p>The On/Off Button is represented by a switch with a light indication on the right. A switch is chosen because it is similar to the mechanism of regular house switch. The light indicator gives immediate feedback from the light bulb to the user. It will give a peace of mind to the user knowing that the light is responsive without physically seeing the light bulb. The switch design is credited to <a href="https://codepen.io/stefgeraets/pen/ExfBd" target="_blank">Stef Geraets</a></p>
+      <div class="text-center">
+        <img src="{{site.baseurl}}/assets/savvy-bulb/switch-off.png" alt="Savvy Bulb Switch Off" height="93px" />
+        <img src="{{site.baseurl}}/assets/savvy-bulb/switch-on.png" alt="Savvy Bulb Switch On" height="93px"/>
+      </div>
+      <br/><br/>
+
+      <h5>Dimmer</h5>
+      <p>The dimmer component is a slider. When clicked, slid and released, the web app will send an input to the particle to change the dimming level of the light bulb. The slider is chosen instead of a textbox input because it is more visually appealing. A slider shows the user a spectrum of brightness however a textbox input only indicates a number which the user may not easily visualize a light bulb’s brightness.</p>
+      <img src="{{site.baseurl}}/assets/savvy-bulb/state-close.png" alt="Savvy Bulb Light Close State" width="100%"/>
+      <p></p><br/><br/>
+
+      <h5>Strobe</h5>
+      <p>The strobe feature is a button with different indicators. The background and font color of the button differs depending on if the strobe is on or off. The dark background indicates that the strobe is off and the lighter background indicates the strobe is on. The contrast between these two colors makes it easy for the user to notice the difference statuses and gives immediate feedback that the function has been sent to the light bulb adapter.</p>
+      <div class="text-center">
+        <img src="{{site.baseurl}}/assets/savvy-bulb/strobe-off.png" alt="Savvy Bulb Switch Off" height="130px" />
+        <img src="{{site.baseurl}}/assets/savvy-bulb/strobe-on.png" alt="Savvy Bulb Switch On" height="130px"/>
+      </div>
+      <br/><br/>
+
+      <h5>Timer and Alarm</h5>
+      <ul>
+        <li>The first component is a brightness input when the timer or alarm goes off. A textbox input is used, because it has a simpler code to send the input to the microcontroller compared to a slider. A simpler code is needed due to time constraints</li>
+        <li>The second component is the drop-down menu when the user picks the time. A simple drop down menu is chosen to limit the user’s choice to a real time. Unlike using a textbox input where the user may insert a number which may not be registered in the microcontroller and change the aesthetics of the design</li>
+        <li>The third component is a countdown display for the timer and a time display for the alarm. These numbers are displayed to show confirmation to the user that the microcontroller has received a time to execute the brightness input</li>
+        <li>The fourth component is a series the buttons to control the input made by the user. The buttons have the function to set, stop and reset the timer or alarm. A button form with labels of each function is used because it is simple for the user to understand which button to click to register a function they want</li>
+      </ul>
+      <div class="text-center">
+        <img src="{{site.baseurl}}/assets/savvy-bulb/timer-set.png" alt="Savvy Bulb Switch Off" height="200px" />
+        <img src="{{site.baseurl}}/assets/savvy-bulb/timer-run.png" alt="Savvy Bulb Switch On" height="200px"/>
+      </div>
+      <br/>
+      <div class="text-center">
+        <img src="{{site.baseurl}}/assets/savvy-bulb/alarm-set.png" alt="Savvy Bulb Switch Off" height="200px" />
+        <img src="{{site.baseurl}}/assets/savvy-bulb/alarm-run.png" alt="Savvy Bulb Switch On" height="200px"/>
+      </div>
+    </div>
+  </div>
+
+
+</div>

@@ -3,7 +3,7 @@ layout: default
 title: Clarissa Gunawan | Savvy Bulb
 ---
 
-<div id="savvy-bulb">
+<div id="savvy-bulb" class="portfolio">
   <div class="row">
     <div class="col-12 mb-3">
       <h5 class="title text-center">Savvy Bulb&nbsp;<i class="fa fa-lightbulb"></i></h5>
@@ -11,8 +11,8 @@ title: Clarissa Gunawan | Savvy Bulb
     </div>
   </div>
   <div class="row">
-    <div class="offset-lg-2 col-lg-4 offset-md-1 col-md-5">
-      <img class="pl-5" src="{{site.baseurl}}/assets/savvy-bulb/hardware.jpg" alt="Savvy Bulb Prototype" width="100%"/>
+    <div class="offset-lg-2 col-lg-4 offset-md-1 col-md-5 pl-5">
+      <img src="{{site.baseurl}}/assets/savvy-bulb/hardware.jpg" alt="Savvy Bulb Prototype" width="100%"/>
     </div>
     <div class="col-lg-4 col-md-5 px-4 intro">
       <p>
@@ -53,29 +53,24 @@ title: Clarissa Gunawan | Savvy Bulb
         <i class="fab fa-js-square"></i> &middot;
         jQuery
       </h5>
-
-      <p></p>
-      <h5>Features:</h5>
-      <ul>
-        <li>On/Off</li>
-        <li>Dimming</li>
-        <li>Strobe Lights</li>
-        <li>Alarm</li>
-        <li>Timer</li>
-      </ul>
+      <br/>
+      <p>The web application is intended for users who own large screen devices, unlike the mobile applications. The app is built using HTML5, CSS and JavaScript. The design must accommodate the major functions (turning on/off and dimming) and additional functions (strobe, alarm and timer). These functions are described in more detailed <a href="/portfolio/savvy-bulb-detail">here</a>. The interface is displayed with cells which are expandable and sortable.</p>
+      <br/>
       <img src="{{site.baseurl}}/assets/savvy-bulb/interface.png" alt="Savvy Bulb Interface" width="100%"/>
-      <!-- <img src="{{site.baseurl}}/assets/savvy-bulb/login.png" alt="Savvy Bulb Particle Login" width="50%"/> -->
-      <!-- <img src="{{site.baseurl}}/assets/savvy-bulb/list.png" alt="Savvy Bulb Multiple Lights" width="100%"/>
-      <img src="{{site.baseurl}}/assets/savvy-bulb/state-close.png" alt="Savvy Bulb Light Close State" width="100%"/> -->
-      <p>Expanded View of A Bulb</p>
+      <img src="{{site.baseurl}}/assets/savvy-bulb/list.png" alt="Savvy Bulb Multiple Lights" width="100%"/>
+      <p></p><br />
+      <h5>One Cell Display</h5>
+      <p>To create a clean display on a larger screen, each registered light is displayed in a cell. The immediate display of the cells are the name of the light bulb, the on/off switch, and the dimmer slider allows user to quickly change the luminosity of the bulb.</p>
+      <img src="{{site.baseurl}}/assets/savvy-bulb/state-close.png" alt="Savvy Bulb Light Close State" width="100%"/>
+      <p></p><br />
+      <h5>Expandable</h5>
+      <p>On the top right corner of the cell is a button which expands the cell and displays the strobe, timer and alarm features. The expandable feature is used to hide the less commonly used features and highlight the major features.</p>
+      <br/>
       <img src="{{site.baseurl}}/assets/savvy-bulb/state-open.png" alt="Savvy Bulb Light Open State" width="100%"/>
-      <p>On and Off States of the Bulb</p>
-      <img src="{{site.baseurl}}/assets/savvy-bulb/switch-off.png" alt="Savvy Bulb Switch Off" height="93px" />
-      <img src="{{site.baseurl}}/assets/savvy-bulb/switch-on.png" alt="Savvy Bulb Switch On" height="93px"/>
-      <p>Sortable Lights</p>
+      <p></p><br />
+      <h5>Sortable</h5>
+      <p>The users are able to arrange the order of the list cells by dragging the cells to the intended position. This allows users to customize the order of their lightbulbs which is independent of the order it was set up.</p>
       <img src="{{site.baseurl}}/assets/savvy-bulb/sort.gif" alt="Savvy Bulb Sortable Lights" width="100%" />
-
-
     </div>
   </div>
   <div class="row separator">
