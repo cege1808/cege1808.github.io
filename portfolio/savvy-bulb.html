@@ -46,13 +46,36 @@ title: Clarissa Gunawan | Savvy Bulb
   </div>
   <div class="row process">
     <div class="offset-lg-3 col-lg-6 offset-md-2 col-md-8 my-4">
+      <h3 class="text-center">Final Design</h3>
+      <h5 class="text-center">
+        <i class="fab fa-html5"></i> &middot;
+        <i class="fab fa-css3-alt"></i> &middot;
+        <i class="fab fa-js-square"></i> &middot;
+        jQuery
+      </h5>
+
+      <p></p>
+      <h5>Features:</h5>
+      <ul>
+        <li>On/Off</li>
+        <li>Dimming</li>
+        <li>Strobe Lights</li>
+        <li>Alarm</li>
+        <li>Timer</li>
+      </ul>
       <img src="{{site.baseurl}}/assets/savvy-bulb/interface.png" alt="Savvy Bulb Interface" width="100%"/>
-      <img src="{{site.baseurl}}/assets/savvy-bulb/login.png" alt="Savvy Bulb Particle Login" width="50%"/>
+      <!-- <img src="{{site.baseurl}}/assets/savvy-bulb/login.png" alt="Savvy Bulb Particle Login" width="50%"/> -->
       <!-- <img src="{{site.baseurl}}/assets/savvy-bulb/list.png" alt="Savvy Bulb Multiple Lights" width="100%"/>
       <img src="{{site.baseurl}}/assets/savvy-bulb/state-close.png" alt="Savvy Bulb Light Close State" width="100%"/> -->
+      <p>Expanded View of A Bulb</p>
       <img src="{{site.baseurl}}/assets/savvy-bulb/state-open.png" alt="Savvy Bulb Light Open State" width="100%"/>
+      <p>On and Off States of the Bulb</p>
       <img src="{{site.baseurl}}/assets/savvy-bulb/switch-off.png" alt="Savvy Bulb Switch Off" height="93px" />
       <img src="{{site.baseurl}}/assets/savvy-bulb/switch-on.png" alt="Savvy Bulb Switch On" height="93px"/>
+      <p>Sortable Lights</p>
+      <img src="{{site.baseurl}}/assets/savvy-bulb/sort.gif" alt="Savvy Bulb Sortable Lights" width="100%" />
+
+
     </div>
   </div>
   <div class="row separator">
@@ -67,8 +90,9 @@ title: Clarissa Gunawan | Savvy Bulb
       <ul>
         <li>Focus more on the most important features first. The most important features are communication with the Particle board and the dimming interface, and not the timer, alarm or strobe features</li>
         <li>Better ways to change the state of a button aside from the toggle function in jQuery</li>
-        <li>Eventhough websites are viewed on larger screens, the scrollbar must be a comfortable length for users to slide</li>
+        <li>Eventhough websites are viewed on larger screens, the slider must be at a comfortable length for users to easily slide</li>
         <li>Refactor brute force functions into more reusable components</li>
+        <li>Do user interaction interviews to recieve feedback on each components' usability</li>
       </ul>
       <h6><i class="fa fa-code-branch"></i>&nbsp;Building a Back-End</h6>
       <ul>
@@ -82,6 +106,7 @@ title: Clarissa Gunawan | Savvy Bulb
         <li>Replace Ajax calls with fetch (and promises)</li>
         <li>Store light states in React Components and call fetch to update display</li>
         <li>Improve design by starting with a mobile-first approach</li>
+        <li>Update page by getting the current brightness from the Particle board every # of seconds to be compatible with multiple devices (iOS or Android)</li>
       </ul>
     </div>
   </div>
